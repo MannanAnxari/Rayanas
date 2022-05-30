@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Abdul-Mannan" content="Rayana`s Project">
+    <title>Rayana Calendars | About</title>
+    <link href="DownloadedData/img/icon.ico" rel="icon">
+    <link href="DownloadedData/css/bundle.min.css" rel="stylesheet">
+    <link href="DownloadedData/css/wow.css" rel="stylesheet">
+    <link href="DownloadedData/css/LineIcons.min.css" rel="stylesheet">
+    <link href="DownloadedData/css/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20b4506959.js" crossorigin="anonymous"></script>
+    <link href="files/css/style.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+    .sec_ab {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        margin: 0rem 5rem;
+    }
+    
+    .image {
+        background: url("person.jpg") center/cover no-repeat;
+    }
+    
+    .content {
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7.6rem;
+    }
+    
+    .content h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        letter-spacing: 6px;
+        padding-top: 3rem;
+        opacity: 0.9;
+    }
+    
+    .content span {
+        height: 0.5px;
+        width: 80px;
+        background: #777;
+        margin: 30px 0;
+    }
+    
+    .content p {
+        padding-bottom: 15px;
+        font-weight: 300;
+        opacity: 0.7;
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+    
+    .links {
+        margin: 15px 0;
+    }
+    
+    .links li {
+        border: 0.5px solid #777;
+        list-style: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        width: 160px;
+        text-align: center;
+        transition: .3s;
+    }
+    
+    .links li a {
+        text-transform: uppercase;
+        color: #777;
+        text-decoration: none;
+    }
+    
+    .links li:hover {
+        border-color: #d43030;
+        cursor: pointer;
+    }
+    
+    .links li:hover a {
+        color: #d43030;
+    }
+    
+    .vertical-line {
+        height: 30px;
+        width: 0.5px;
+        background: #777;
+        margin: 0 auto;
+    }
+    
+    .icons {
+        display: flex;
+        padding: 15px 0;
+    }
+    
+    .icons li {
+        display: block;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .icons li i {
+        font-size: 26px;
+        transition: .3s;
+        opacity: 0.8;
+    }
+    
+    .icons li i:hover {
+        color: #d43030;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    @media(max-width: 992px) {
+        section {
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+        .image {
+            height: 100vh;
+        }
+        .content {
+            height: 100vh;
+        }
+        .content h2 {
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        .content span {
+            margin: 20px 0;
+        }
+        .content p {
+            font-size: 14px;
+        }
+        .links li a {
+            font-size: 14px;
+        }
+        .links {
+            margin: 5px 0;
+        }
+        .links li {
+            padding: 6px 10px;
+        }
+        .icons li i {
+            font-size: 15px;
+        }
+    }
+    
+    .footer-alone {
+        padding: 2.5rem;
+    }
+    
+    .services-sec:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: inherit;
+        background: transparent;
+        transform: translate(0);
+    }
+    
+    .padding-bottom-half {
+        padding-bottom: 92px;
+    }
+    
+    .padding-top {
+        padding-top: 0px;
+    }
+    
+    .rounded-pill:hover~.cursor_1 {
+        width: 60px;
+    }
+    
+    .content {
+        /* clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); */
+    }
+    
+    .about-image img {
+        /* clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);  */
+        /* border-radius:  30% 70% 70% 30% / 30% 30% 70% 70% ; */
+    }
+    
+    .sec_ab {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    
+    @media (max-width: 767.98px) {
+        .about-image {
+            display: none;
+        }
+        .content {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 7.6rem;
+            width: 100vw;
+            margin-left: 0;
+        }
+        .preloader {
+            top: 0;
+        }
+        .sec_ab {
+            display: inherit;
+            margin: 0;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="d">
+            <img src="files/img/logo.png" alt="">
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Header -->
+    <header id="home">
+        <div class="inner-header">
+            <div>
+                <div class="row no-gutters">
+                    <div class="col-4 col-lg-4 d-flex align-items-center">
+                        <a href="#" class="sidemenu_btn link" id="sidemenu_toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="files/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-end align-items-center">
+                        <button id='menubutton' class="btn btn-main rounded-pill">Login</button>
+                        <div class="darkBtn"></div>
+                        <nav class='sidebar'>
+                            <form id="loginForm">
+                                <h1 class="head">Login</h1>
+                                <p>If you are already a member, easily log in</p>
+                                <input class="input-field" type="email" id="email" placeholder="Email">
+                                <div class="pass-icon">
+                                    <input class="input-field" type="password" id="password" placeholder="password">
+                                    <img src="https://www.pngitem.com/pimgs/m/495-4950508_show-password-show-password-icon-png-transparent-png.png">
+                                </div>
+                                <a onMouseOver="this.style.color='#fec107'" onMouseOut="this.style.color='#fff'" href="#">Forgot my password</a>
+                                <input class="anim-text-login" type="submit" id="login-btn" value="Login">
+                                <div class="or">
+                                    <hr>
+                                    <span>OR</span>
+                                    <hr>
+                                </div>
+                                <button class="google-btn"> 
+                                      Login with Google
+                                </button>
+                            </form>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-menu hidden side-menu-opacity">
+            <div class="nav-Logo"><span>RAYANA</span><span class="anim-text-white">CALENDAR</span></div>
+            <div class="bg-overlay bg-overlay-full"></div>
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <div class="container">
+                    <div class="row w-100 side-menu-inner-content">
+                        <div class="col-12 col-lg-12 offset-lg-2 nav-icon">
+                            <nav class="navbar navbar-nav">
+                                <div class="side-nav-menu">
+                                    <a class="nav-link scroll home active anim-text-white" target="_blank" href="index.html">Home</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="Cards.html">Products</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="about.html">About</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="random.html">Gallery</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="contact.html">Contact
+                                    <span></span><span></span><span></span></a>
+                                    <span class="menu-line link"><i>/</i></span>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="side-menu-footer">
+                            <div class="social-icons">
+                                <span><a href="https://www.facebook.com/The-Mannan-Anxari-105773707767032/ " target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></span>
+                                <span><a href="https://twitter.com/Mannananxari" target="_blank" class="twit"><i class="fab fa-twitter"></i></a></span>
+                                <span><a href="https://www.linkedin.com/in/abdul-mannan-332846231/" target="_blank" class="in"><i class="fab fa-linkedin-in"></i></a></span>
+                                <span><a href="https://www.instagram.com/themannananxari/ " target="_blank" class="insta"><i class="fab fa-instagram"></i></a></span>
+                            </div>
+                            <p class="copywrite text-right">&#169; 2022 RAYANA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="#"></a>
+    </header>
+    <!-- Header -->
+
+    <!-- Upper About  -->
+    <section class="sec_ab">
+        <div class="image about-image">
+            <!-- <img style="transform: scaleX(-1);" src="files/img/about_Side.jpeg" alt=""> -->
+            <img src="files/img/about_Side.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h2>About Us</h2>
+            <span></span>
+
+            <p>A calendar is a system of organizing days. This is done by giving names to periods of time, typically days, weeks, months and years. A date is the designation of a single, specific day within such a system. A calendar is also a physical record
+                (often paper) of such a system</p>
+
+            <ul class="links">
+                <li><a href="random.html" target="_blank">Gallery</a></li>
+
+                <div class="vertical-line"></div>
+
+                <li><a href="Cards.html" target="_blank">Products</a></li>
+
+                <div class="vertical-line"></div>
+
+                <li><a href="contact.html" target="_blank">contact</a></li>
+            </ul>
+
+            <ul class="icons">
+                <li><i onclick="window.location=`https://www.facebook.com/The-Mannan-Anxari-105773707767032/ `; target = `_blank`; " class="fab fa-facebook-f "></i></li>
+                <li><i onclick="window.location=`https://twitter.com/Mannananxari `; target = `_blank`; " class="fab fa-twitter "></i></li>
+                <li><i onclick="window.location=`https://www.linkedin.com/in/abdul-mannan-332846231/` ; target = `_blank`; " class="fab fa-linkedin-in "></i></li>
+                <li><i onclick="window.location=`https://www.instagram.com/themannananxari/ ` ; target = `_blank`; " class="fab fa-instagram "></i></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Upper About  -->
+
+    <!-- About Text  -->
+    <section class="services-sec padding-top padding-bottom-half" id="services-sec">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 padding-top-half">
+                    <ul class="services-boxes">
+                        <li class="service-card left wow slideInLeft">
+                            <div class="icon-holder"><i class="fa-solid fa-people-group"></i></div>
+                            <p class="text">Our Company Employs More Than Five Thousand People.</p>
+                        </li>
+                        <li class="service-card right d-block text-center wow slideInRight">
+                            <div class="icon-holder"><i class="fa-solid fa-truck-fast"></i></div>
+                            <p class="text">Our Company`s Home Delivery Service is The Best And <b> Every Order is Delivered in Three Hours.</b></p>
+                        </li>
+                        <li class="service-card left icon-right text-center text-lg-right wow slideInLeft">
+                            <p class="text order-2 order-lg-1">Our Company Made <b> 4.65 Billion</b> in 2015-2022</p>
+                            <div class="icon-holder order-1 order-lg-2"><i class="fa-solid fa-chart-line"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Text  -->
+
+    <!-- Footer -->
+    <footer class="footer-alone ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-12 ">
+                    <div class="footer-social text-center ">
+                        <ul class="list-unstyled ">
+                            <li><a class="wow fadeInUp " target="_blank " href="https://www.facebook.com/The-Mannan-Anxari-105773707767032/ "><i class="fab fa-facebook-f "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank " href="https://twitter.com/Mannananxari "><i class="fab fa-twitter "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank " href="https://www.linkedin.com/in/abdul-mannan-332846231/ "><i class="fab fa-linkedin-in "></i><span></span></a></li>
+                            <li><a class="wow fadeInUp " target="_blank " href="https://www.instagram.com/themannananxari/ "><i class="fab fa-instagram "></i><span></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3 ">
+                    <p class="company-about fadeIn ">© 2022 RAYANA. Made By <a href="https://kodwithmanan.blogspot.com/ " target="_blank ">Abdul-Mannan</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Cursor  -->
+    <div id="crsr" class="cursor_1 "></div>
+    <!-- Cursor  -->
+
+    <!-- Top -->
+    <div class="go-top "><i class="fas fa-angle-up "></i><i class="fas fa-angle-up "></i></div>
+    <!-- Top -->
+
+    <script src="DownloadedData/js/bundle.min.js"></script>
+    <script src="DownloadedData/js/owl.carousel.min.js"></script>
+    <script src="DownloadedData/js/wow.min.js"></script>
+    <script src="files/js/script.js"></script>
+    <!-- <script>
+        $(function() {
+            $('#menubutton').hover(function() {
+                $('#crsr').css({
+                    'width': '60px',
+                    'height': '60px',
+                    'background': 'rgba(82, 82, 82, 0.17)'
+                });
+            }, function() {
+                // on mouseout, reset the background colour
+                $('#crsr').css({
+                    'width': '30px',
+                    'height': '30px',
+                    'background': 'transparent'
+
+                });;
+            });
+        });
+    </script> -->
+</body>
+
+</html>

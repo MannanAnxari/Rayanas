@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Abdul-Mannan" content="Rayana`s Project">
+    <title>Rayana Calendars | Products</title>
+    <link href="DownloadedData/img/icon.ico" rel="icon">
+    <link href="DownloadedData/css/bundle.min.css" rel="stylesheet">
+    <link href="DownloadedData/css/wow.css" rel="stylesheet">
+    <link href="DownloadedData/css/LineIcons.min.css" rel="stylesheet">
+    <link href="DownloadedData/css/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20b4506959.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css">
+    <link href="files/css/style.css" rel="stylesheet">
+
+    <style>
+        .cta {
+            border: none;
+            background: none;
+        }
+        
+        .cta span {
+            padding-bottom: 7px;
+            letter-spacing: 4px;
+            font-size: 11px;
+            padding-right: 15px;
+            text-transform: uppercase;
+        }
+        
+        .cta i {
+            transform: translateX(-8px);
+            transition: all 0.3s ease;
+        }
+        
+        .cta:hover i {
+            transform: translateX(0);
+            color: black;
+        }
+        
+        .cta:active i {
+            transform: scale(0.9);
+        }
+        
+        .hover-underline-animation {
+            position: relative;
+            color: black;
+            padding-bottom: 20px;
+        }
+        
+        .hover-underline-animation:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1.5px;
+            bottom: 0;
+            left: 0;
+            background-color: #000000;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .cta:hover .hover-underline-animation:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        .details h1 {
+            font-size: 1.6rem;
+        }
+        
+        table td,
+        table tr {
+            color: #202020;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="d">
+            <img src="files/img/logo.png" alt="">
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Header -->
+    <header>
+        <div class="inner-header stand">
+            <div class="">
+                <div class="row no-gutters">
+                    <div class="col-4 col-lg-4 d-flex align-items-center">
+                        <a href="#" class="sidemenu_btn link" id="sidemenu_toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-center">
+                        <a class="navbar-brand" href=" #">
+                            <img src=" files/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-end align-items-center">
+                        <button id='menubutton' class="btn btn-main rounded-pill">Login</button>
+                        <div class="darkBtn"></div>
+                        <nav class='sidebar'>
+                            <form id="loginForm">
+                                <h1 class="head">Login</h1>
+                                <p>If you are already a member, easily log in</p>
+                                <input class="input-field" type="email" id="email" placeholder="Email">
+                                <div class="pass-icon">
+                                    <input class="input-field" type="password" id="password" placeholder="password">
+                                    <img src="https://cdn.pixabay.com/photo/2016/12/18/11/04/eye-1915454_960_720.png">
+                                </div>
+
+                                <a onMouseOver="this.style.color='#fec107'" onMouseOut="this.style.color='#fff'" href="#">Forgot my password</a>
+                                <input class="anim-text-login" type="submit" id="login-btn" value="Login">
+                                <div class="or">
+                                    <hr>
+                                    <span>OR</span>
+                                    <hr>
+                                </div>
+                                <button class="google-btn"> 
+                                      Login with Google
+                                    </button>
+
+                            </form>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-menu hidden side-menu-opacity">
+            <div class="nav-Logo"><span>RAYANA</span><span class="anim-text-white">CALENDAR</span></div>
+
+            <div class="bg-overlay bg-overlay-full"></div>
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <div class="container">
+                    <div class="row w-100 side-menu-inner-content">
+                        <div class="col-12 col-lg-12 offset-lg-2 nav-icon">
+                            <nav class="navbar navbar-nav">
+                                <div class="side-nav-menu">
+                                    <a class="nav-link scroll home active anim-text-white" target="_blank" href="index.html">Home</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="Cards.html">Products</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="about.html">About</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="random.html">Gallery</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="contact.html">Contact
+                                    <span></span><span></span><span></span></a>
+                                    <span class="menu-line link"><i>/</i></span>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="side-menu-footer">
+                            <div class="social-icons">
+                                <span><a href='https://www.facebook.com/The-Mannan-Anxari-105773707767032/' target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+                                <span><a href='https://twitter.com/Mannananxari' target="_blank"><i class="fab fa-twitter"></i></a></span>
+                                <span><a href="https://www.linkedin.com/in/abdul-mannan-332846231/" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
+                                <span><a href='https://www.instagram.com/themannananxari/' target="_blank"><i class="fab fa-instagram"></i></a></span>
+
+                            </div>
+                            <p class="copywrite text-right">&#169; 2022 RAYANA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="#"></a>
+    </header>
+    <!-- Header -->
+
+    <!-- Upper Banner-->
+    <section class="page-title">
+        <div class="bg-overlay bg-black opacity-7"></div>
+        <div class="container">
+            <h2 class="hide-cursor">Our Top Products</h2>
+            <ul class="page-breadcrumb link">
+                <li><a href=" index.html"><span class="icon fas fa-home"></span>Home</a></li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Upper Banner -->
+
+    <!-- Products  -->
+    <div class="main_product_sec" data-aos="fade-up" data-aos-anchor-placement="top-center" id="calendar">
+        <div class="standalone-detail">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2  text-center wow " data-wow-duration="2s">
+                    <h1 class="heading text-white">Calendar`s</h1>
+                    <p class="para_text m-auto">A calendar is a system of organizing days. This is done by giving names to periods of time, typically days, weeks, months and years. A date is the designation of a single, specific day within such a system. </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin"></div>
+        <div class="uk-section">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src=" https://mir-s3-cdn-cf.behance.net/project_modules/1400/886759106290921.5f8cf91086828.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Egyptian calendar</h1>
+                                        <p>£135</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://www.universalapproach.com.au/pub/media/catalog/product/cache/8b8f1e61e783c045142bcb34d1e0b2a9/c/a/calendar-wire-bound-a3-1a.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Umma calendar</h1>
+                                        <p><strike>£330</strike> £230</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://www.eliteflyers.com/images/product/349_wall-calendar-custom-printed-100lb-book-magazine-stock.png" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Nisg̱a'a</h1>
+                                        <p>£150</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://5.imimg.com/data5/DD/RE/MY-4030281/personalized-table-top-calendar-500x500.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Old Persian calendar</h1>
+                                        <p>£250</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://img.jeawincdn.com/resource/upfiles/153/images/products/custom-full-color-printing/custom-tabletop-calendars/TC003-2021-desk-calendars.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Gaulish calendar</h1>
+                                        <p>£250</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://img.pikbest.com/03/10/02/79TpIkbEsTyHR.jpg-0.jpg!bw700" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Japanese calendar</h1>
+                                        <p>£150</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://previews.123rf.com/images/dolphfyn/dolphfyn2011/dolphfyn201100093/158656985-simple-desk-calendar-for-may-2021.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Pyu calendar</h1>
+                                        <p>£50</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://img.pikbest.com/03/09/99/80hpIkbEsTUHk.jpg-0.jpg!bw700" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Pisan calendar</h1>
+                                        <p>£20</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://img.pikbest.com/03/10/02/79TpIkbEsTyHR.jpg-0.jpg!bw700" alt=""></div>
+
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Runic calendar</h1>
+                                        <p>£149</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Calendar.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_product_sec" data-aos="fade-up" data-aos-anchor-placement="top-center" id="dairy">
+        <div class="standalone-detail">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2  text-center wow  " data-wow-duration="2s">
+
+                    <h1 class="heading text-white">Dairy`s</h1>
+                    <p class="para_text m-auto">A diary is a record (originally in handwritten format) with discrete entries arranged by date reporting on what has happened over the course of a day or other period.</p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin"></div>
+        <div class="uk-section">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="http://cdn.shopify.com/s/files/1/0580/1272/9553/products/Block-Design-Sticky-corner-A5-notebook-blue.jpg?v=1628586815" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Freya</h1>
+                                        <p>£120</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://cdn.shopify.com/s/files/1/0580/1272/9553/products/Block-Design-Sticky-corner-A5-notebook-green_750x.jpg?v=1628586815" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Dark</h1>
+                                        <p>£999</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://cdn.shopify.com/s/files/1/0580/1272/9553/products/Block-Design-Sticky-corner-A5-notebook-grey.jpg?v=1628586815" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Bella</h1>
+                                        <p>£250</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://ae01.alicdn.com/kf/HTB1dgjcKf1TBuNjy0Fjq6yjyXXaU/Customized-Cover-Inner-page-Logo-Note-Book-Business-notebook-Best-For-Company-Business-Logo-Gifts.jpg_Q90.jpg_.webp" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Anne II</h1>
+                                        <p>£140</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://nayasuppliers.com/wp-content/uploads/2020/08/notebook_02.gif" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Kitty</h1>
+                                        <p><strike>£00</strike> 100% off</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://cdn.shopify.com/s/files/1/1017/2791/products/Dot-Grid-Notebook-A5-White---WBG_600x600.jpg?v=1631559160" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Sparkles</h1>
+                                        <p>£50</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://rukminim2.flixcart.com/image/416/416/diary-notebook/m/w/v/paperclip-esp192m-c-blue-original-imaebkzhjjyjg76k.jpeg?q=70" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Dreams</h1>
+                                        <p>£250</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://cdn1.brandability.co.za/2017/10/26161023/Stanford-A5-Notebook-Blue-Plain-510x510.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Albert</h1>
+                                        <p>£2,499</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+
+                            <div class="top"> <img src="https://cdn1.brandability.co.za/2017/10/26161126/Stanford-A5-Notebook-Black-Plain-510x510.jpg" alt=""></div>
+
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Billie</h1>
+                                        <p>£250</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Dairy.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_product_sec" data-aos="fade-up" data-aos-anchor-placement="top-center" id="pen">
+
+        <div class="standalone-detail">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2  text-center wow  " data-wow-duration="2s">
+
+                    <h1 class="heading text-white">Pen`s</h1>
+                    <p class="para_text m-auto">A pen is a common writing instrument that applies ink to a surface, usually paper, for writing or drawing. </p>
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin"></div>
+        <div class="uk-section">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://assets.catawiki.nl/assets/2017/3/10/b/5/7/b574e95d-8e29-4363-baf0-f21bce132b95.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Asdreni</h1>
+                                        <p>£40</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://images-na.ssl-images-amazon.com/images/I/51lvd40RdlL._AC_SX355_.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Azorín</h1>
+                                        <p>£50</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://rukminim1.flixcart.com/image/416/416/kjiwfbk0-0/pen/s/f/7/sktb07c2qpvdr-dryden-designs-original-imafz2qnv9hghakt.jpeg?q=70" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Azure</h1>
+                                        <p>£85</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://images-na.ssl-images-amazon.com/images/I/415Skmp315L.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Barbara Vine</h1>
+                                        <p>£25</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://m.media-amazon.com/images/I/81qY287x7fL.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Brada</h1>
+                                        <p>£20</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://i.ebayimg.com/images/g/3N4AAOSwqmVenjCo/s-l400.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Elia</h1>
+                                        <p>£40</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://images-na.ssl-images-amazon.com/images/I/61Z4ZFHltNL._AC_SL1500_.jpg" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Enna Duval</h1>
+                                        <p>£50</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://rukminim1.flixcart.com/image/416/416/jnc2bgw0/pen/9/c/k/oculus-kpn-mds-r-0744-original-imafayfzmzxqbgux.jpeg?q=70" alt=""></div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Ianthe</h1>
+                                        <p>£45</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a>
+                                    </div>
+                                    <div class="buy_1"><i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="wrapper">
+                        <div class="container_0">
+                            <div class="top"> <img src="https://4.imimg.com/data4/VM/TO/MY-2165590/ink-pens-500x500.jpg" alt=""></div>
+
+                            <div class="bottom">
+                                <div class="left">
+                                    <div class="details">
+                                        <h1>Justitia</h1>
+                                        <p>£70</p>
+                                    </div>
+                                    <div class="buy"><a style="text-decoration: none;" href="files/rateList/Pens.xlsx" download="download"><i class="fa-solid fa-arrow-down-long"></i></a></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+                            <div class="contents">
+                                <table>
+                                    <tr>
+                                        <th>Made By :</th>
+                                        <th>Germany</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Warranty :</td>
+                                        <td>2 Year</td>
+                                    </tr>
+                                </table>
+                                <div style="width: 100%; display: flex; justify-content: center;">
+                                    <a href="random.html" target="_blank" style="text-decoration: none;">
+                                        <button class="cta">
+                                            <span class="hover-underline-animation">Go To Gallery</span> 
+                                            <i class="fa-solid fa-right-long" id="arrow-horizontal"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products  -->
+
+    <!-- Footer -->
+    <footer class="footer-alone ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-12 ">
+                    <div class="footer-social text-center ">
+                        <ul class="list-unstyled ">
+                            <li><a class="wow fadeInUp " target="_blank " href="https://www.facebook.com/The-Mannan-Anxari-105773707767032/ "><i class="fab fa-facebook-f "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank " href="https://twitter.com/Mannananxari "><i class="fab fa-twitter "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank " href="https://www.linkedin.com/in/abdul-mannan-332846231/ "><i class="fab fa-linkedin-in "></i><span></span></a></li>
+                            <li><a class="wow fadeInUp " target="_blank " href="https://www.instagram.com/themannananxari/ "><i class="fab fa-instagram "></i><span></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3 ">
+                    <p class="company-about fadeIn ">© 2022 RAYANA. Made By <a href="https://kodwithmanan.blogspot.com/ " target="_blank ">Abdul-Mannan</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Cursor  -->
+    <div class="cursor_1 "></div>
+    <!-- Cursor  -->
+
+    <!-- Top -->
+    <div class="go-top "><i class="fas fa-angle-up "></i><i class="fas fa-angle-up "></i></div>
+    <!-- Top -->
+
+    <!-- Download Data  -->
+    <a href="files/rateList/Calendar.xlsx" download="Rayana_Products_Pricelist">
+        <div class="go-download" title="Download All Products Pricelist"><i class="fas fa-angle-up "></i><i class="fas fa-angle-up"></i></div>
+    </a>
+    <!-- Download Data  -->
+
+</body>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 0,
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+<script src="DownloadedData/js/bundle.min.js "></script>
+<script src="DownloadedData/js/owl.carousel.min.js "></script>
+<script src="DownloadedData/js/wow.min.js "></script>
+<script src="files/js/script.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        stagePadding: 15,
+        margin: 10,
+        nav: true,
+        navText: ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>', '<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            640: {
+                items: 2
+            },
+            960: {
+                items: 3
+            }
+        }
+    })
+</script>
+
+<script>
+</script>
+
+</html>

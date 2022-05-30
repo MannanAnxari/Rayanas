@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="DownloadedData/img/icon.ico" rel="icon">
+    <link rel="stylesheet" href="DownloadedData/css/bundle.min.css">
+    <link href="DownloadedData/css/wow.css" rel="stylesheet">
+    <link href="DownloadedData/css/LineIcons.min.css" rel="stylesheet">
+    <link href="DownloadedData/css/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20b4506959.js" crossorigin="anonymous"></script>
+    <link href="files/css/style.css" rel="stylesheet">
+    <title>Rayana Calendars | Gallery</title>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Raleway;
+        background-color: #202125;
+    }
+    
+    .heading {
+        text-align: center;
+        font-size: 2.0em;
+        letter-spacing: 1px;
+        padding: 40px;
+        color: white;
+    }
+    
+    .gallery-image {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .gallery-image img {
+        transform: scale(1.1);
+        transition: transform 0.4s ease;
+    }
+    
+    .img-box {
+        box-sizing: content-box;
+        margin: 10px;
+        overflow: hidden;
+        display: inline-block;
+        color: white;
+        position: relative;
+        background-color: white;
+        transition: .3s all;
+    }
+    
+    .caption {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        opacity: 0.0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .transparent-box {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: background-color 0.3s ease;
+    }
+    
+    .img-box:hover img {
+        transform: scale(1.2);
+    }
+    
+    .img-box:hover {
+        box-shadow: 0 0 10px rgb(77, 77, 77), 0 0 20px rgb(77, 77, 77), 0 0 30px rgb(77, 77, 77);
+    }
+    
+    .img-box:hover .transparent-box {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .img-box:hover .caption {
+        transform: translateY(-20px);
+        opacity: 1.0;
+    }
+    
+    .img-box:hover {
+        cursor: pointer;
+    }
+    
+    .caption>p:nth-child(2) {
+        font-size: 0.8em;
+    }
+    
+    .opacity-low {
+        opacity: 0.5;
+    }
+    
+    .gallery-image {
+        display: inline-block;
+        margin-bottom: 10px;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        column-count: 4;
+        padding: 20px;
+    }
+    
+    .img-box {
+        border-radius: 1rem;
+    }
+    
+    img {
+        width: 100%;
+        transition: all .3s ease-in-out;
+    }
+    
+    @media screen and (max-width:768px) {
+        .gallery-image {
+            column-count: 3;
+        }
+    }
+    
+    @media screen and (max-width:425px) {
+        .gallery-image {
+            column-count: 2;
+        }
+        h1 {
+            font-size: .8rem;
+        }
+    }
+    
+    @media screen and (max-width:375px) {
+        .gallery-image {
+            column-count: 1;
+        }
+        h1 {
+            font-size: .8rem;
+        }
+    }
+    
+    * {
+        font-family: poppins;
+    }
+</style>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="d">
+            <img src="files/img/logo.png" alt="">
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Header -->
+    <header>
+        <div class="inner-header stand">
+            <div class="">
+                <div class="row no-gutters">
+                    <div class="col-4 col-lg-4 d-flex align-items-center">
+                        <a href="#" class="sidemenu_btn link" id="sidemenu_toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-center">
+                        <a class="navbar-brand" href=" #">
+                            <img src=" files/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-lg-4 d-flex justify-content-end align-items-center">
+                        <button id='menubutton' class="btn btn-main rounded-pill">Login</button>
+                        <div class="darkBtn"></div>
+                        <nav class='sidebar'>
+                            <form id="loginForm">
+                                <h1 class="head">Login</h1>
+                                <p>If you are already a member, easily log in</p>
+                                <input class="input-field" type="email" id="email" placeholder="Email">
+                                <div class="pass-icon">
+                                    <input class="input-field" type="password" id="password" placeholder="password">
+                                    <img src="https://cdn.pixabay.com/photo/2016/12/18/11/04/eye-1915454_960_720.png">
+                                </div>
+
+                                <a onMouseOver="this.style.color='#fec107'" onMouseOut="this.style.color='#fff'" href="#">Forgot my password</a>
+                                <input class="anim-text-login" type="submit" id="login-btn" value="Login">
+                                <div class="or">
+                                    <hr>
+                                    <span>OR</span>
+                                    <hr>
+                                </div>
+                                <button class="google-btn"> 
+                                      Login with Google
+                                    </button>
+
+                            </form>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-menu hidden side-menu-opacity">
+            <div class="nav-Logo"><span>RAYANA</span><span class="anim-text-white">CALENDAR</span></div>
+
+            <div class="bg-overlay bg-overlay-full"></div>
+            <div class="inner-wrapper">
+                <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+                <div class="container">
+                    <div class="row w-100 side-menu-inner-content">
+                        <div class="col-12 col-lg-12 offset-lg-2 nav-icon">
+                            <nav class="navbar navbar-nav">
+                                <div class="side-nav-menu">
+                                    <a class="nav-link scroll home active anim-text-white" target="_blank" href="index.html">Home</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="Cards.html">Products</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="about.html">About</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="random.html">Gallery</a>
+                                    <a class="nav-link scroll anim-text-white" target="_blank" href="contact.html">Contact
+                                    <span></span><span></span><span></span></a>
+                                    <span class="menu-line link"><i>/</i></span>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="side-menu-footer">
+                            <div class="social-icons">
+                                <span><a href="https://www.facebook.com/The-Mannan-Anxari-105773707767032/" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></span>
+                                <span><a href="https://twitter.com/Mannananxari" target="_blank" class="twit"><i class="fab fa-twitter"></i></a></span>
+                                <span><a href="https://www.linkedin.com/in/abdul-mannan-332846231/" target="_blank" class="in"><i class="fab fa-linkedin-in"></i></a></span>
+                                <span><a href="https://www.instagram.com/themannananxari/" target="_blank"  class="insta"><i class="fab fa-instagram"></i></a></span>
+                            </div>
+                            <p class="copywrite text-right">&#169; 2022 RAYANA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="close_side_menu" href="#"></a>
+    </header>
+    <!-- Header -->
+
+    <!-- Upper Banner -->
+    <section class="page-title">
+        <div class="bg-overlay bg-black opacity-7"></div>
+        <div class="container">
+            <h2 class="hide-cursor">Rayana`s Product Gallery</h2>
+            <ul class="page-breadcrumb link">
+                <li><a href=" index.html"><span class="icon fas fa-home"></span>Home</a></li>
+                <li>Gallery</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Upper Banner -->
+
+    <!-- Images  -->
+    <div class="gallery-image" id="images">
+    </div>
+    <!-- Images  -->
+
+    <!-- Footer -->
+    <footer class="footer-alone ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-12 ">
+                    <div class="footer-social text-center ">
+                        <ul class="list-unstyled ">
+                            <li><a class="wow fadeInUp " target="_blank" href="https://www.facebook.com/The-Mannan-Anxari-105773707767032/ "><i aria-hidden="true " class="fab fa-facebook-f "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank" href="https://twitter.com/Mannananxari "><i aria-hidden="true " class="fab fa-twitter "></i><span></span></a></li>
+                            <li><a class="wow fadeInDown " target="_blank" href="https://www.linkedin.com/in/abdul-mannan-332846231/ "><i aria-hidden="true " class="fab fa-linkedin-in "></i><span></span></a></li>
+                            <li><a class="wow fadeInUp " target="_blank" href="https://www.instagram.com/themannananxari/ "><i aria-hidden="true " class="fab fa-instagram "></i><span></span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3 ">
+                    <p class="company-about fadeIn ">© 2022 RAYANA. Made By <a href="https://kodwithmanan.blogspot.com/ " target="_blank ">Abdul-Mannan</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Top -->
+    <div class="go-top "><i class="fas fa-angle-up "></i><i class="fas fa-angle-up "></i></div>
+    <!-- Top -->
+
+    <!-- Cursor -->
+    <div class="cursor_1"></div>
+    <!-- Cursor -->
+
+
+    <script>
+        let imgCode = document.getElementById("images");
+        let str = `
+        <div class="img-box" data-aos="fade-up-right">
+            <img id="imgg" src="files/images/0.jpg" alt="" />
+            <a href="Cards.html" target="_blank">
+                <div class="transparent-box">
+                    <div class="caption"  style="color: white;">
+                        <p>Buy This Product:</p>
+                        <p class="opacity-low">RAYANA CALENDAR</p>
+                    </div>
+                </div>
+            </a> 
+        </div> `;
+        for (let i = 1; i <= 100; i++) {
+            str += `
+        <div class="img-box" data-aos="fade-up-left">
+            <img id="imgg" src="files/images/${i}.jpg" alt="" /> 
+            <a href="Cards.html" target="_blank">
+                 
+                <div class="transparent-box">
+                    <div class="caption" style="color: white;">
+                        <p>Buy This Product:</p>
+                        <p class="opacity-low">RAYANA CALENDAR</p>
+                    </div>
+                </div>
+            </a> 
+        </div> `;
+            imgCode.innerHTML = str;
+            // console.log(str);
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src=" DownloadedData/js/bundle.min.js "></script>
+    <script src=" DownloadedData/js/owl.carousel.min.js "></script>
+    <script src=" DownloadedData/js/wow.min.js "></script>
+    <script src=" files/js/script.js "></script>
+</body>
+
+</html>
